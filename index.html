@@ -22,33 +22,21 @@
   <!-- Custom styles for this template -->
   <link href="css/resume.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="css/cookiealert.css">
+
 </head>
 
 <body id="page-top">
 
-  <!-- cookie bar -->
-  <div class="container">
-    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#cookieModal">
-      See Cookies
-    </button>  
-  </div>
-  
-  <div class="modal fade" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <div class="notice d-flex justify-content-between align-items-center">
-            <div class="cookie-text">This website uses cookies to personalize content and analyse traffic in order to offer you a better experience.</div>
-            <div class="buttons d-flex flex-column flex-lg-row">
-              <a href="#a" class="btn btn-success btn-sm" data-dismiss="modal">I accept</a>
-              <a href="#a" class="btn btn-secondary btn-sm" data-dismiss="modal">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- START Bootstrap-Cookie-Alert -->
+    <div class="alert text-left cookiealert" role="alert">
+      <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. <a href="https://cookiesandyou.com/" target="_blank">Learn more</a>
+
+      <button type="button" class="btn btn-primary btn-sm acceptcookies">
+          I agree
+      </button>
     </div>
-  </div>
-  <!-- cookie bar -->
+    <!-- END Bootstrap-Cookie-Alert -->
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -315,7 +303,7 @@
 
     <hr style="width: 100%; height: 1px;" class="bg-primary" />
     <footer>
-      <div class="mt-2 mb-2 ml-2">Sito realizzato da da Andrea Polini, con caffè e Bootstrap</div> 
+      <div class="mt-2 mb-2 ml-2">Sito realizzato da Andrea Polini, grazie a <a href="https://it.wikipedia.org/wiki/Caff%C3%A8" target="_blank"><i class="fas fa-mug-hot"></i></a> &amp; <a href="https://getbootstrap.com/" target="_blank"><i class="fab fa-bootstrap"></i></a></div> 
     </footer>
   
   </div>
@@ -330,6 +318,9 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/resume.min.js"></script>
+  
+  <!-- cookie alert -->
+  <script src="js/cookiealert.js"></script>
 
 </body>
 
